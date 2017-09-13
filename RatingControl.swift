@@ -2,8 +2,8 @@
 //  RatingControl.swift
 //  FoodTracker
 //
-//  Created by Artem on 11.09.17.
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Created by Artem on 12.09.17.
+//  Copyright © 2017 theswiftproject. All rights reserved.
 //
 
 import UIKit
