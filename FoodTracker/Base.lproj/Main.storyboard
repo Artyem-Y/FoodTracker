@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWl-Mr-AdA">
-                                            <rect key="frame" x="126" y="8" width="42" height="19"/>
+                                            <rect key="frame" x="126" y="8" width="270" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -116,7 +116,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="pAg-f7-4c1">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cB3-QY-jZ4"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cB3-QY-jZ4">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="7Yw-9A-s9I"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="epG-lS-uAd">
                             <connections>
                                 <segue destination="slc-5s-dQX" kind="unwind" unwindAction="unwindToMealListWithSender:" id="2RK-wH-fg8"/>
@@ -124,7 +128,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cancel" destination="cB3-QY-jZ4" id="oHD-gF-wXe"/>
+                        <outlet property="cancel" destination="cB3-QY-jZ4" id="1tg-F2-wUy"/>
                         <outlet property="nameTextField" destination="aMX-Fq-Ujr" id="COc-JO-yAD"/>
                         <outlet property="photoImageView" destination="mxj-34-031" id="Vaz-Gw-vKA"/>
                         <outlet property="ratingControl" destination="kCA-KI-pPa" id="Si5-ou-VEE"/>
